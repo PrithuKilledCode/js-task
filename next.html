@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
+
+  <title>next page</title>
+</head>
+<body>
+ <div class="nextpagecont">
+  <canvas id="myChart"></canvas>
+  <div class="container">
+<div class="info-cont">
+  <h1></h1>
+  <h2></h2>
+  <label for="cars">Choose a car:</label>
+<div class="option-cont">
+  <select name="categories" id="categories" onchange="chartData(document.querySelector('#categories').value)">
+    <option value="all" id="all" selected>all</option>
+   
+  </select>
+  <select name="charts" id="charts" onchange="chartData(document.querySelector('#categories').value)">
+    <option value="bar" >bar</option>
+    <option value="line" >Line chart</option>
+    <option value="radar" >Radar chart</option>
+  
+  </select>
+</div>
+
+</div>
+  </div>
+ </div>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  
+  <script defer src="two.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
+  <title>Form Validation</title>
+</head>
+<body>
+  <div class="container">
+    <div class="head"><h2>Write down your info</h2></div>
+    <div class="bodycont">
+    <form  id="signinform">
+      <div class="input-cont">
+        <span class="subhead">
+          Username
+        </span>
+        <input type="text" id="username" placeholder="username"/>
+        <label class="errlabel" id="nameErr">* username cannot be empty</label>
+  
+      </div>
+      <div class="input-cont">
+        <span class="subhead">
+          Email
+        </span>
+        <input type="text" id="email" placeholder="email"/>
+        <label class="errlabel" id="emailErr">* pls enter a valid email</label>
+  
+      </div> <div class="input-cont">
+        <span class="subhead">
+          Password
+        </span>
+        <input type="password" id="password" placeholder="password"/>
+  <label class="errlabel" id="passErr">*password dont match or less than 5 charecters</label>
+      </div> 
+      <div class="input-cont">
+        <span class="subhead">
+          Password-check
+        </span>
+        <input type="password" id="password-check" placeholder="password-check"/>
+  <label class="errlabel"></label>
+      </div>
+      <div class="input-cont" id="btn">
+        
+        <input type="submit" id="submitbtn" value="Sign In"/>
+      </div>
+    </form>
+    </div>
+   
+  </div>
+  <script  defer src="main.js"></script>
+</body>
+</html>
